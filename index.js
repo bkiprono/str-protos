@@ -20,4 +20,6 @@ const userEmail = "patrick";
 const result = template.interpolate({
   data: { ...text, ...payload, file, userEmail }
 });
+const messageField = document.getElementById('messageField');
+messageField.innerHTML = result;
 console.log(result);
